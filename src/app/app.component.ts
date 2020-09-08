@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'reddit-clone';
+  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{
+    console.log(`Ajouter article titre : ${title.value} et le lien : ${link.value}`);
+    return false;
+  }
+  
 }
