@@ -24,6 +24,7 @@
     "rxjs": "~6.6.0",
     "semantic": "0.0.1",
     "tslib": "^2.0.0",
+    "vercel": "^20.1.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
