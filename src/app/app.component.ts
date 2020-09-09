@@ -12,6 +12,9 @@ export class AppComponent {
   
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{
     console.log(`Ajouter article titre : ${title.value} et le lien : ${link.value}`);
+    this.articles.push(new Article(title.value, link.value, 0));
+    title.value = '';
+    link.value = '';
     return false;
   }
 
