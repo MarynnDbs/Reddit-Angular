@@ -8,7 +8,11 @@ import { Article } from './components/article/article.model';
 })
 
 export class AppComponent {
-  articles : Article[]
+  articles: Article[];
+  
+  sortedArticles(): Article[] {
+    return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
+  }
   
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{
     console.log(`Ajouter article titre : ${title.value} et le lien : ${link.value}`);
